@@ -96,7 +96,7 @@ while (true)
 end
 ```
 
-## Wathing and Managing Your Monitors
+## Watching and Managing Your Monitors
 
 Run the script above in as many hosts as you want.
 
