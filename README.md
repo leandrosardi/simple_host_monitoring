@@ -15,21 +15,21 @@ gem install simple_host_monitoring
 
 ## Signup to **ConnectionSphere**
 
-Go to [ConnectionSpheere.com/signup](https://connectionspheere.com/signup).
+While you run the SHM client in your computers, you need to access [ConnectionSphere](https://connectionspheere.com/signup) to watch their status.
 
-If you already have an account, go [here](https://connectionspheere.com/login) to login.
+1. Go to [ConnectionSpheere.com/signup](https://connectionspheere.com/signup). If you already have an account, go [the logging page](https://connectionspheere.com/login) to login. If you don't remember your password, yo can [reset it here](https://connectionsphere.com/forgot).
 
-Then, follow [this tutorial](http://help.expandedventure.com/knowledgebase/articles/1933597) about 
+2. Generate your API key. Follow [this tutorial](https://help.expandedventure.com/developers/getting-your-api-key) in order to 
 
-1. how to generate your **ConnectionSphere** **API key**, and
+	- generate your **API key**, and
 
-2. how to get the **access points URL** for your API calls.
+	- get the **access points URL** for your API calls.
 
 ## Running the tests
 
 Here is a very short script to
 
-1. poll the load your server's CPU, memory and hard drive; and
+1. get the status of your host's CPU, memory and hard drive (polling); and
 
 2. push such numbers to your **ConnectionSphere**'s account every X second.
 
