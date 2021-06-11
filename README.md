@@ -120,7 +120,7 @@ d:\> shm
 
 ```
 d:\> c:\shm\shm
-==> will report the free disk space in the hard drive C
+==> will report the free disk space in the hard drive D
 ```
 
 ## Further Work
