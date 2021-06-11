@@ -102,6 +102,27 @@ Run the script above in as many hosts as you want.
 
 Login to your **ConnectionSphere** account, and then go [here](https://connectionsphere.com/shm/dashboard) to watch your monitors and setup email alerts.
 
+### Note about Hard Drives
+
+If the computer where SHM is running has more than 1 hard-drive, then SHM should report the free disk-space of the hard-drive from where the command is running.
+
+Example:
+
+```
+c:\shm> shm
+==> will report the free disk space in the hard drive C
+```
+
+```
+d:\> shm
+==> will report the free disk space in the hard drive D
+```
+
+```
+d:\> c:\shm\shm
+==> will report the free disk space in the hard drive C
+```
+
 ## Further Work
 
 * Run the script above as a Windows service.
