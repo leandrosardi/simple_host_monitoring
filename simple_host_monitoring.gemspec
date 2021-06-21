@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.add_runtime_dependency 'websocket', '~> 1.2.8', '>= 1.2.8'
   s.add_runtime_dependency 'json', '~> 1.8.1', '>= 1.8.1'
-  s.add_runtime_dependency 'tiny_tds', '~> 1.0.5', '>= 1.0.5'
+  s.add_runtime_dependency 'tiny_tds', '0.7.0'
   s.add_runtime_dependency 'sequel', '~> 4.28.0', '>= 4.28.0'
   s.add_runtime_dependency 'simple_command_line_parser', '~> 1.1.2', '>= 1.1.2'
   s.add_runtime_dependency 'simple_cloud_logging', '~> 1.1.23', '>= 1.1.23'
