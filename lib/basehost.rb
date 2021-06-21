@@ -43,7 +43,7 @@ module BlackStack
       else
         self.cpu_architecture = `lscpu | grep Architecture`.split(':')[1].strip!
         self.cpu_speed = `lscpu | grep "CPU MHz:"`.split(':')[1].strip!.to_f.round
-        self.cpu_load_average = Sys::CPU.load_avg.to_i
+        self.cpu_load_average = Sys::CPU.load_avg.to_s.to_i
         self.cpu_model = `lscpu | grep "Model name"`.split(':')[1].strip!
         self.cpu_type = self.cpu_model.split(' ')[0]
         self.cpu_number = `lscpu | grep "^CPU(s):"`.split(':')[1].strip!.to_i
