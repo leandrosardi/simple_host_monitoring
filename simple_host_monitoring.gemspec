@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'simple_host_monitoring'
-  s.version     = '1.1.1'
-  s.date        = '2020-01-02'
+  s.version     = '1.1.2'
+  s.date        = '2021-06-15'
   s.summary     = "THIS GEM IS STILL IN DEVELOPMENT STAGE. Track memory, CPU and disk space of any host."
   s.description = "THIS GEM IS STILL IN DEVELOPMENT STAGE. Find documentation here: https://github.com/leandrosardi/simple_host_monitoring."
   s.authors     = ["Leandro Daniel Sardi"]
