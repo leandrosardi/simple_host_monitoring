@@ -60,7 +60,7 @@ module BlackStack
       # mapping lan attributes
       self.net_hostname = hostname
       #self.net_remote_ip = remote_ip.to_s
-      self.net_mac_address = windows_os? ? BlackStack::SimpleHostMonitoring.macaddress : `cat /sys/class/net/eth0/address`.to_s
+      self.net_mac_address = BlackStack::SimpleHostMonitoring.macaddress
 
       self.to_hash
     end
