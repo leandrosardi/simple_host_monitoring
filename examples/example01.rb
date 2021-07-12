@@ -32,8 +32,8 @@ logger = BlackStack::LocalLoggerFactory.create('./example01.log')
 
 #
 while (true) 
-  url = "https://127.0.0.1:444/api1.4/shm/update.json"
-  api_key = 'E20CBAE0-A4D4-4161-8812-6D9FE67A2E47'
+  url = "https://euler.connectionsphere.com/api1.4/shm/update.json"
+  api_key = '290582D4-D00C-4D37-82AF-23043B242647'
 
   logger.logs "Flag start time... "
   start_time = Time.now
