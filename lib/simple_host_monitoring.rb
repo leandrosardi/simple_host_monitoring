@@ -45,14 +45,16 @@ module BlackStack
     # TODO: Esta funcion no retorna la mac address completa
     # TODO: Validar que no se retorne una macaddress virtual, con todos valores en 0
     def self.macaddress()
+      return `cat /sys/class/net/eth0/address`.upcase.strip.gsub(':', '-') unless BlackStack::RemoteHost.new.windows_os?
+
       s = `ipconfig /all`
-      
-      # The standard (IEEE 802) format for printing MAC-48 
-      # => addresses in human-friendly form is six groups 
-      # => of two hexadecimal digits, separated by hyphens 
+
+      # The standard (IEEE 802) format for printing MAC-48
+      # => addresses in human-friendly form is six groups
+      # => of two hexadecimal digits, separated by hyphens
       # => - or colons :
       v = s.scan(/(([A-F0-9]{2}\-){5})([A-F0-9]{2}$)/im)
-      
+
       if (v.size>0)
         return v.first.join.to_s
       else
